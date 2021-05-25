@@ -1,6 +1,7 @@
 package handler;
 
 import beverage.BeverageType;
+import ingredients.ResourceType;
 import machine.CoffeeMachine;
 
 public class MainHandler {
@@ -9,6 +10,7 @@ public class MainHandler {
         testAllTheOutletsCanServeTheSameBeverage();
         testTheCorrectMessageIfBeverageCanNotServed();
         testTheLowRunningIngredientsMessage();
+        testTheRefillingResource();
     }
     private static void testAllTheOutletsCanServeTheBeverage() {
         System.out.println("TestAllTheOutletsCanServeTheBeverage");
@@ -45,5 +47,16 @@ public class MainHandler {
         coffeeMachine.brewBeverage(3, BeverageType.BLACK_TEA);
         coffeeMachine.brewBeverage(4, BeverageType.HOT_TEA);
         coffeeMachine.brewBeverage(5, BeverageType.HOT_COFFEE);
+    }
+
+    private static void testTheRefillingResource() {
+        System.out.println("TestTheRefillingResource");
+
+        CoffeeMachine coffeeMachine = new CoffeeMachine(3);
+        coffeeMachine.brewBeverage(1, BeverageType.GREEN_TEA);
+        coffeeMachine.refillIngredients(ResourceType.GREEN_MIXTURE, 50);
+        coffeeMachine.brewBeverage(2, BeverageType.GREEN_TEA);
+        coffeeMachine.brewBeverage(3, BeverageType.GREEN_TEA);
+
     }
 }

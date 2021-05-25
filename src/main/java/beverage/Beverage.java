@@ -1,6 +1,6 @@
 package beverage;
 
-import resource.Resource;
+import ingredients.Resource;
 
 public abstract class Beverage {
     protected Resource resource;

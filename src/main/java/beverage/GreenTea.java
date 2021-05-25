@@ -1,6 +1,6 @@
 package beverage;
 
-import resource.Resource;
+import ingredients.Resource;
 
 public class GreenTea extends Beverage {
     private final int hotWater;

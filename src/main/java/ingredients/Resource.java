@@ -1,4 +1,4 @@
-package resource;
+package ingredients;
 
 import config.ResourceLowIndicator;
 
@@ -51,7 +51,7 @@ public class Resource {
 
     public void addGreenMixture(int greenMixture) {
         synchronized (this) {
-            this.greenMixture += elaichiSyrup;
+            this.greenMixture += greenMixture;
         }
     }
 

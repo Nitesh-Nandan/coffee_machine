@@ -2,7 +2,7 @@ package machine;
 
 import beverage.*;
 import config.BeverageComposition;
-import resource.Resource;
+import ingredients.Resource;
 
 public class CoffeeMaker extends Thread {
   private final Resource resource;
