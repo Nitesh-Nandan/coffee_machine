@@ -1,7 +1,7 @@
 package config;
 
 public interface ResourceComposition {
-    int WATER = 500;
+    int WATER = 300;
     int MILK =  500;
     int GINGER_SYRUP = 100;
     int SUGAR_SYRUP = 100;

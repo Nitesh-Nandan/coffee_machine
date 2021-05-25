@@ -33,7 +33,7 @@ public class CoffeeMachine {
 
     public void brewBeverage (int outletId, BeverageType beverageType) {
         if(outletId > outlets) {
-            throw new RuntimeException("Outlet ");
+            throw new RuntimeException("Specified outlet is not present");
         }
         CoffeeMaker coffeeMaker = outletCoffeeMakerMap.get(outletId);
         coffeeMaker.setBeverageType(beverageType);
