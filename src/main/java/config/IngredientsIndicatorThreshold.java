@@ -1,6 +1,6 @@
 package config;
 
-public interface ResourceLowIndicator {
+public interface IngredientsIndicatorThreshold {
     int WATER = 100;
     int MILK =  50;
     int GINGER_SYRUP = 10;

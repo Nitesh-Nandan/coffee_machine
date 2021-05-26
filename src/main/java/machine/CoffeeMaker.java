@@ -1,7 +1,7 @@
 package machine;
 
 import beverage.*;
-import config.BeverageComposition;
+import config.BeverageIngredients;
 import ingredients.Resource;
 
 public class CoffeeMaker extends Thread {
@@ -28,21 +28,21 @@ public class CoffeeMaker extends Thread {
        if (this.beverageType == BeverageType.HOT_TEA) {
           Beverage hotTea = HotTea.builder()
                   .resource(resource)
-                  .hotMilk(BeverageComposition.HotTea.HOT_MILK)
-                  .teaLeavesSyrup(BeverageComposition.HotTea.TEA_LEAVES_SYRUP)
-                  .hotWater(BeverageComposition.HotTea.HOT_WATER)
-                  .sugarSyrup(BeverageComposition.HotTea.SUGAR_SYRUP)
-                  .gingerSyrup(BeverageComposition.HotTea.GINGER_SYRUP)
+                  .hotMilk(BeverageIngredients.HotTea.HOT_MILK)
+                  .teaLeavesSyrup(BeverageIngredients.HotTea.TEA_LEAVES_SYRUP)
+                  .hotWater(BeverageIngredients.HotTea.HOT_WATER)
+                  .sugarSyrup(BeverageIngredients.HotTea.SUGAR_SYRUP)
+                  .gingerSyrup(BeverageIngredients.HotTea.GINGER_SYRUP)
                   .build();
           hotTea.make();
       }
        else if (this.beverageType == BeverageType.HOT_COFFEE) {
            Beverage hotCoffee = Coffee.builder()
                    .resource(resource)
-                   .hotMilk(BeverageComposition.Coffee.HOT_MILK)
-                   .hotWater(BeverageComposition.Coffee.HOT_WATER)
-                   .sugarSyrup(BeverageComposition.Coffee.SUGAR_SYRUP)
-                   .coffeeSyrup(BeverageComposition.Coffee.COFFEE_SYRUP)
+                   .hotMilk(BeverageIngredients.Coffee.HOT_MILK)
+                   .hotWater(BeverageIngredients.Coffee.HOT_WATER)
+                   .sugarSyrup(BeverageIngredients.Coffee.SUGAR_SYRUP)
+                   .coffeeSyrup(BeverageIngredients.Coffee.COFFEE_SYRUP)
                    .build();
            hotCoffee.make();
        }
@@ -50,10 +50,10 @@ public class CoffeeMaker extends Thread {
        else if (this.beverageType == BeverageType.BLACK_TEA) {
            Beverage blackTea = BlackTea.builder()
                    .resource(resource)
-                   .hotWater(BeverageComposition.BlackTea.HOT_WATER)
-                   .teaLeavesSyrup(BeverageComposition.BlackTea.TEA_LEAVES_SYRUP)
-                   .gingerSyrup(BeverageComposition.BlackTea.GINGER_SYRUP)
-                   .sugarSyrup(BeverageComposition.BlackTea.SUGAR_SYRUP)
+                   .hotWater(BeverageIngredients.BlackTea.HOT_WATER)
+                   .teaLeavesSyrup(BeverageIngredients.BlackTea.TEA_LEAVES_SYRUP)
+                   .gingerSyrup(BeverageIngredients.BlackTea.GINGER_SYRUP)
+                   .sugarSyrup(BeverageIngredients.BlackTea.SUGAR_SYRUP)
                    .build();
            blackTea.make();
        }
@@ -61,10 +61,10 @@ public class CoffeeMaker extends Thread {
        else if (this.beverageType == BeverageType.GREEN_TEA) {
            Beverage greenTea = GreenTea.builder()
                    .resource(resource)
-                   .hotWater(BeverageComposition.GreenTea.HOT_WATER)
-                   .sugarSyrup(BeverageComposition.GreenTea.SUGAR_SYRUP)
-                   .gingerSyrup(BeverageComposition.GreenTea.GINGER_SYRUP)
-                   .greenMixture(BeverageComposition.GreenTea.GREEN_MIXTURE)
+                   .hotWater(BeverageIngredients.GreenTea.HOT_WATER)
+                   .sugarSyrup(BeverageIngredients.GreenTea.SUGAR_SYRUP)
+                   .gingerSyrup(BeverageIngredients.GreenTea.GINGER_SYRUP)
+                   .greenMixture(BeverageIngredients.GreenTea.GREEN_MIXTURE)
                    .build();
            greenTea.make();
        }

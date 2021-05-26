@@ -1,6 +1,6 @@
 package config;
 
-public interface ResourceComposition {
+public interface Ingredients {
     int WATER = 300;
     int MILK =  500;
     int GINGER_SYRUP = 100;

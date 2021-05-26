@@ -1,5 +1,5 @@
 package ingredients;
 
-public enum ResourceType {
+public enum IngredientsType {
     WATER, MILK, SUGAR_SYRUP, ELAICHI_SYRUP, TEA_LEAVES_SYRUP, GREEN_MIXTURE, COFFEE_SYRUP, GINGER_SYRUP
 }

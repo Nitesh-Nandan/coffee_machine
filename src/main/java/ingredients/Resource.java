@@ -1,6 +1,6 @@
 package ingredients;
 
-import config.ResourceLowIndicator;
+import config.IngredientsIndicatorThreshold;
 
 public class Resource {
     private int hotWater;
@@ -88,7 +88,7 @@ public class Resource {
                 success = true;
             }
         }
-        if(this.hotWater  <=  ResourceLowIndicator.WATER) {
+        if(this.hotWater  <=  IngredientsIndicatorThreshold.WATER) {
             System.out.println("Alert: HotWater is running low");
         }
 
@@ -104,7 +104,7 @@ public class Resource {
             }
         }
 
-        if(this.hotMilk  <=  ResourceLowIndicator.MILK) {
+        if(this.hotMilk  <=  IngredientsIndicatorThreshold.MILK) {
             System.out.println("Alert: Milk is running low");
         }
 
@@ -120,7 +120,7 @@ public class Resource {
             }
         }
 
-        if(this.teaLeavesSyrup  <= ResourceLowIndicator.TEA_LEAVES_SYRUP) {
+        if(this.teaLeavesSyrup  <= IngredientsIndicatorThreshold.TEA_LEAVES_SYRUP) {
             System.out.println("Alert: Tea Leaves Syrup is running low");
         }
 
@@ -136,7 +136,7 @@ public class Resource {
             }
         }
 
-        if(this.gingerSyrup  <= ResourceLowIndicator.GINGER_SYRUP) {
+        if(this.gingerSyrup  <= IngredientsIndicatorThreshold.GINGER_SYRUP) {
             System.out.println("Alert: Ginger Syrup is running low");
         }
 
@@ -152,7 +152,7 @@ public class Resource {
             }
         }
 
-        if(this.sugarSyrup  < ResourceLowIndicator.SUGAR_SYRUP) {
+        if(this.sugarSyrup  < IngredientsIndicatorThreshold.SUGAR_SYRUP) {
             System.out.println("Alert: Sugar Syrup is running low");
         }
 
@@ -168,7 +168,7 @@ public class Resource {
             }
         }
 
-        if(this.greenMixture  < ResourceLowIndicator.GREEN_MIXTURE) {
+        if(this.greenMixture  < IngredientsIndicatorThreshold.GREEN_MIXTURE) {
             System.out.println("Alert: Green Mixture is running low");
         }
 
@@ -184,7 +184,7 @@ public class Resource {
             }
         }
 
-        if(this.coffeeSyrup  < ResourceLowIndicator.COFFEE_SYRUP) {
+        if(this.coffeeSyrup  < IngredientsIndicatorThreshold.COFFEE_SYRUP) {
             System.out.println("Alert: Coffee Syrup is running low");
         }
 
@@ -200,7 +200,7 @@ public class Resource {
             }
         }
 
-        if(this.elaichiSyrup  < ResourceLowIndicator.ELAICHI_SYRUP) {
+        if(this.elaichiSyrup  < IngredientsIndicatorThreshold.ELAICHI_SYRUP) {
             System.out.println("Alert: Elaichi Syrup is running low");
         }
 

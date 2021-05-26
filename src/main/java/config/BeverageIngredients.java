@@ -1,6 +1,6 @@
 package config;
 
-public interface BeverageComposition {
+public interface BeverageIngredients {
 
     interface HotTea {
          int HOT_WATER = 50;
